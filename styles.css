@@ -44,3 +44,13 @@
     background:midnightblue;
     color: aquamarine;
   }
+
+  a:hover {
+    animation: wiggle 0.1s infinite;
+  }
+
+  @keyframes wiggle {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+  }
