@@ -1,3 +1,3 @@
 # imf-portfolio
 
-https://ianmfraser.github.io/imf-portfolio/
+www.ianmfraser.com
