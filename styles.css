@@ -1,4 +1,4 @@
-:root{
+:root {
     padding: 0px;
     background-color: midnightblue;
     font-family: 'Inconsolata', monospace;
@@ -6,15 +6,13 @@
     color: aquamarine;
 }
 
-
 .blurb {
-  font-size: 1.2em;
+  font-size: 1.5em;
   min-height: 100vh;
   padding: 50px;
   position: absolute;
   width: 75%;
 }
-
 
 .container {
     display: flex;
@@ -22,35 +20,32 @@
     position: relative;
     min-height: 100vh;
     width: 100%;
-
 }
-
 
 .fa {
     font-size: 0.86em;
     width: 100px;
     text-align: left;
     text-decoration: none;
-
-  }
-
-
-  .fa:hover {
+}
+  
+.fa:hover {
     opacity: 0.7;
-  }
+}
 
-
-  .fa-linkedin, .fa-github, .fa-bandcamp {
+.fa-linkedin, 
+.fa-github, 
+.fa-bandcamp {
     background:midnightblue;
     color: aquamarine;
-  }
+}
 
-  a:hover {
+a:hover {
     animation: wiggle 0.1s infinite;
-  }
+}
 
-  @keyframes wiggle {
+@keyframes wiggle {
     0% { transform: translate(2px, 0); }
     50% { transform: translate(-2px, 0); }
     100% { transform: translate(2px, 0); }
-  }
+}
