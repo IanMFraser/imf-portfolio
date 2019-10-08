@@ -7,11 +7,11 @@
 }
 
 .blurb {
-  font-size: 1.5em;
-  min-height: 100vh;
-  padding: 50px;
-  position: absolute;
-  width: 75%;
+    font-size: 1.5em;
+    min-height: 100vh;
+    padding: 50px;
+    position: absolute;
+    width: 75%;
 }
 
 .container {
@@ -40,6 +40,7 @@
     color: aquamarine;
 }
 
+/* Animation of links - just a little wiggle */
 a:hover {
     animation: wiggle 0.1s infinite;
 }
