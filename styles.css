@@ -1,7 +1,7 @@
-:root {
+:root, body {
     padding: 0px;
     background-color: midnightblue;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Fira Code', monospace;
     font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
     color: aquamarine;
 }
@@ -40,6 +40,72 @@
     color: aquamarine;
 }
 
+.resume {
+    font-size: 16px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    min-height:100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr) 1/2fr;
+    grid-template-areas:
+        "name experience "
+        "contact projects"
+        "skills projects"
+        "skills education";
+    border: 5px solid aquamarine;
+}
+
+.name {
+    grid-area: name;
+    font-size: 3.5em;
+    padding: 50px;
+}
+
+.contact {
+    grid-area: contact;
+    padding: 0px 50px;
+}
+
+.skills {
+    grid-area: skills;
+    padding: 0px 50px;
+    line-height: 2.2;
+}
+
+.experience {
+    grid-area: experience;
+    padding: 0px 50px 0px 0px;
+}
+
+.projects { 
+    grid-area: projects;
+    padding: 0px 50px 0px 0px;
+}
+
+.education {
+    grid-area: education;
+    padding: 0px 0px 50px 0px;
+}
+
+.education p {
+    margin: 10;
+}
+
+.section-header {
+    font-size: 2em;
+}
+
+.date {
+    float: right;
+    margin-right: 50px;
+}
+
+ul {
+    padding: 0px 20px; 
+}
+
 /* Animation of links - just a little wiggle */
 a:hover {
     animation: wiggle 0.1s infinite;
@@ -49,4 +115,30 @@ a:hover {
     0% { transform: translate(2px, 0); }
     50% { transform: translate(-2px, 0); }
     100% { transform: translate(2px, 0); }
+}
+
+
+@media (min-width:1200px) {
+    .resume {
+        grid-template-areas: 
+        "name experience"
+        "contact projects"
+        "skills projects"
+        "skills education";
+    }
+}
+
+@media (max-width: 700px) {
+    .resume {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "name"
+        "contact"
+        "experience"
+        "projects"
+        "projects"
+        "skills"
+        "skills"
+        "education";
+    }
 }
