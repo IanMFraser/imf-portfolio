@@ -116,7 +116,6 @@ a:hover {
     50% { transform: translate(-2px, 0); }
     100% { transform: translate(2px, 0); }
 }
-<<<<<<< HEAD
 
 
 @media (min-width:1200px) {
@@ -143,5 +142,3 @@ a:hover {
         "education";
     }
 }
-=======
->>>>>>> c4716d702d628b273fb59b102197875a9d9fc038
