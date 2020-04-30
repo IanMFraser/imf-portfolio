@@ -51,10 +51,10 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(3, 1fr) 1/2fr;
     grid-template-areas:
-        "name education "
+        "name experience "
         "contact experience"
         "skills experience"
-        "skills other-experience";
+        "skills experience";
     border: 5px solid aquamarine;
 }
 
@@ -139,10 +139,10 @@ a:hover {
 @media (min-width:1200px) {
     .resume {
         grid-template-areas: 
-        "name education"
+        "name experience"
         "contact experience"
         "skills experience"
-        "skills other-experience";
+        "skills experience";
     }
 }
 
@@ -152,10 +152,10 @@ a:hover {
         grid-template-areas: 
         "name"
         "contact"
-        "education"
         "experience"
         "experience"
-        "other-experience"
+        "experience"
+        "experience"
         "skills"
         "skills";
     }
