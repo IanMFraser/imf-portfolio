@@ -10,6 +10,10 @@ a {
     color: aquamarine;
 }
 
+a:visited {
+    color:aquamarine;
+}
+
 h2 {
     margin-top: 0;
 }
