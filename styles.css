@@ -18,6 +18,15 @@ h2 {
     margin-top: 0;
 }
 
+ul {
+    padding: 0px 20px; 
+}
+
+/* Animation of links - just a little wiggle */
+a:hover {
+    animation: wiggle 0.2s;
+}
+
 #education {
     margin-top: 26.56px;
 }
@@ -128,15 +137,6 @@ h2 {
 
 .link:visited {
     color:aquamarine;
-}
-
-ul {
-    padding: 0px 20px; 
-}
-
-/* Animation of links - just a little wiggle */
-a:hover {
-    animation: wiggle 0.2s;
 }
 
 @keyframes wiggle {
